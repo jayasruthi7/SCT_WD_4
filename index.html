@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 To-Do List</h1>
+
+    <!-- Input -->
+    <div class="input-box">
+      <input type="text" id="taskInput" placeholder="Enter a new task...">
+      <button onclick="addTask()">Add Task</button>
+      <button onclick="clearAll()">Clear All</button>
+    </div>
+
+    <!-- Filter -->
+    <div class="filter-box">
+      <select id="filter" onchange="filterTasks()">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+      </select>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
